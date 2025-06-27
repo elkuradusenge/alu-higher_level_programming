@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10000, 10000)
-if number > 0:
-    print(f"{number} is positive")
-elif number == 0:
-    print(f"{number} is zero")
-else:
-    print(f"{number} is negative")
+def positive_or_negative(number):
+    if not isinstance(number, int):
+        raise TypeError("number must be an integer")
+    if number > 0:
+        print(f"{number} is positive")
+    elif number == 0:
+        print(f"{number} is zero")
+    else:
+        print(f"{number} is negative")
+
+
+if __name__ == "__main__":
+    import random
+    number = random.randint(-10000, 10000)
+    positive_or_negative(number)
