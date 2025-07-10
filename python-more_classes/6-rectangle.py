@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class with area, perimeter, and string representation."""
+"""Defines a Rectangle class with area, perimeter, 
+    and string representation."""
 
 
 class Rectangle:
@@ -24,7 +25,8 @@ class Rectangle:
         Return the string representation of the rectangle using '#' characters.
 
         Returns:
-            str: Formatted rectangle string or empty string if width or height is 0.
+            str: Formatted rectangle string or empty string
+             if width or height is 0.
         """
         if self.__width == 0 or self.__height == 0:
             return ''
@@ -41,7 +43,8 @@ class Rectangle:
 
     def __del__(self):
         """
-        Destructor for Rectangle. Decreases instance count and prints a message.
+        Destructor for Rectangle. Decreases instance count and prints a
+         message.
         """
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")

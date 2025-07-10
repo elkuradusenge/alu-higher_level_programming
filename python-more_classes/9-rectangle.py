@@ -27,7 +27,8 @@ class Rectangle:
         Rectangle.number_of_instances += 1
 
     def __str__(self):
-        """Return the string representation of the rectangle using print_symbol."""
+        """Return the string representation of the
+         rectangle using print_symbol."""
         if self.__width == 0 or self.__height == 0:
             return ''
         return '\n'.join(str(self.print_symbol) *
@@ -127,6 +128,7 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-        """Return the perimeter of the rectangle, or 0 if width or height is 0."""
+        """Return the perimeter of the rectangle, or 0 if width 
+         or height is 0."""
         return 0 if self.__width == 0 or self.__height == 0 else 2 * \
             (self.__width + self.__height)

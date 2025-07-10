@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Module for a Rectangle class with width, height, area, and perimeter operations.
+"""Module for a Rectangle class with width,
+ height, area, and perimeter operations.
 """
 
 
